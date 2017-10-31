@@ -2,10 +2,6 @@ body {
   margin: 0;
 }
 
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
 
 h1 {
   font-size: 1.25em;
@@ -137,13 +133,30 @@ label:last-child {
 
 /* --------- table styles below here --------- */
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr:nth-child(even) {background-color: green}
 
 /* --------- unordered list styles below here --------- */
+ul {
+	list-style-type:none;
+}
 
+li {
+	border-top-style: dotted;
+	padding: 10px;
+}
 
 /* --------- definition list styles below here --------- */
 
-
+dt{
+	font-weight: bold;
+}
+dd{
+	padding: 10px;
+}
 
 
 /* --------- Basic responsive breakpoint --------- */
